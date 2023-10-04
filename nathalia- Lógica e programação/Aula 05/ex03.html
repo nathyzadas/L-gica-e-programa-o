@@ -1,0 +1,65 @@
+<script>
+
+
+    for (i = 1; i <= 10; i++){
+        let n = parseInt(prompt("numero"))
+        if (n %2 == 0) {
+            document.write(n+" e par!!! "+"<br>")
+        } else {
+            document.write(n+" e impar!!! "+"<br>")
+        }
+    }
+
+   alert("Menu \n"+
+    "1 - Números de 0 a 10 \n"+
+    "2 - Tabuada \n"+
+    "3 - Teste do par ou ímpar")
+    
+    let resp = "sim"
+    while (resp == "sim") {
+    
+    let op = parseInt(prompt("Opção:"))       
+       let i,n
+       switch (op) {
+        case 1:
+        document.write("Estrutura WHILE<br>")
+         i = 10
+        while (i >=0) {
+        
+        document.write(i+"<br>")
+        document.write("<br")
+        i--
+        }
+        break;
+        case 2:
+         n = parseInt(prompt("Número"))
+         i = 0
+        while (i<=10) {
+        document.write(n + " X "+i+" = "+ i*n+"<br>")
+        i++
+        }
+        break;
+        case 3:
+         i = 1
+            while (i <=10) {
+              n = parseInt(prompt("Número"))
+            if (n %2 ==0) {
+                document.write(n+" é par.<br>")
+            }else{
+                document.write(n+" é ímpar.<br>") 
+            }
+            i++
+            }
+        break;
+       
+        default:
+            document.write("Opção Inválida")
+            break;
+            
+       }
+      resp = prompt("Deseja continuar? (sim/não)")
+      
+    }
+
+
+</script>

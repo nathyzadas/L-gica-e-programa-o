@@ -1,0 +1,41 @@
+<script>
+    // insira 5 nomes
+    // mostre "Prova 1"  e "Prova 2"
+    // Calculo de mádias, saber se esta "Aprovado, Reprovado, Recuperacao"
+    
+    var msg
+    var n1
+    var n2
+   
+
+    for (i = 1; i <= 5; i++) {
+       
+        let nome = prompt(i+" Nome: ")
+        n1 = parseFloat(prompt(" Prova 1: "))
+        n2 = parseFloat(prompt(" Prova 2: "))
+        var media = (n1 + n2) /2
+        
+        document.write(i+" Nome: "+nome+"<br>")
+        document.write("Prova 1: "+n1+"<br>")
+        document.write("Prova 2: "+n2+"<br>")
+        document.write("Media Final: "+media+"<br>")
+
+        var situacao
+
+        if (media >= 7) {
+            situacao = "Aprovado!!!"
+        } else if (media <= 5) {
+            situacao = "Recuperacao!!!"
+        } else {
+            situacao = "Reprovado!!!"
+        }
+
+        document.write("Situacao: "+situacao+"<br>")
+
+
+
+        
+
+
+    }
+</script>

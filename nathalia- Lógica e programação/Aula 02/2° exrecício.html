@@ -1,0 +1,13 @@
+<script>
+    var salario = parseFloat(prompt("Digite seu salário: "))
+    var desconto
+    if (salario >= 1800) {
+       desconto = (salario/100)*11
+    }else{
+       desconto = (salario/100)*9
+    }
+    var salario_final = salario - desconto
+    document.write("Salário: $"+salario+"<br>")
+    document.write("Desconto: "+desconto+"<br>")
+    document.write("Salário Final: $"+salario_final+"<br>")
+</script>

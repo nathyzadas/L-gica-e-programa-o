@@ -1,0 +1,19 @@
+<script>
+    /* Entrada de uma idade e imprimir
+    a condição onde:
+    Idade >= 65, Idade Feliz
+    Idade >= 18, Maior de Idade
+    Idade < 18 Menor de Idade
+    */
+   var idade = prompt(parseInt("Digite sua idade: "))
+   var estatus
+   if (idade >= 65) {
+       estatus = "Idade Felíz"
+   } else if (idade < 18) {
+    estatus = "Menor de Idade"
+   } else {
+    estatus = "Maior de Idade"
+   }
+   document.write("Idade: "+idade+"<br>")
+   document.write("Estatus: "+estatus+"<br>")
+</script>

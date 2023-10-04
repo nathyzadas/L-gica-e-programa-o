@@ -1,0 +1,20 @@
+<script>
+    /* O aluno entra com a sua média.
+    E o sistema verifica se: 
+    Média >= 7, Aprovado
+    Média < 7 e Média >=5, Recupereção 
+    Média < 5, Reprovado
+    */
+var media = parseFloat(prompt("Digite sua média: "))
+var estudante
+
+if (media >= 7) {
+    estudante = "Aprovado"
+} else if (media < 5) {
+    estudante = "reprovado"
+} else {
+    estudante = "recuperação"
+}
+document.write("Média: "+media+"<br>")
+document.write("O estudante está em: "+estudante+"<br>")
+</script>

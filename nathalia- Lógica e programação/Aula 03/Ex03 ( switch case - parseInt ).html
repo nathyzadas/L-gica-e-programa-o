@@ -1,0 +1,47 @@
+<script>
+    // Switch Case
+    alert ("Menu:\n"+"Soma = +\n"+"subtração = -\n"+"Multiplicação = *\n"+"Divisão = /\n")
+    var opcao = prompt("Opção: ")
+    let x
+    let y
+    let soma
+    let subtracao
+    let multiplicacao
+    let divisao
+    switch (opcao) {
+        case "+":
+             x = parseInt(prompt("Primeiro Vlaor: "))
+             y = parseInt(prompt("Segundo Vlaor: "))
+             soma = x + y 
+             document.write("Resultado da Soma: "+soma+"<br>")
+             break;
+
+        case "-":     
+             x = parseInt(prompt("Primeiro Valor"))
+             y = parseInt(prompt("Segundo Valor"))
+             subtracao = x - y 
+             document.write("Resultado da Subtração: "+subtracao+"<br>")
+             break;
+
+        case "*":
+             x = parseInt(prompt("Primeiro Valor"))
+             y = parseInt(prompt("Segundo Valor"))   
+             multiplicacao = x * y
+              document.write("Resultado da Multiplicação: "+multiplicacao+"<br>")
+              break;
+
+        case "/":     
+             x = parseInt(prompt("Primeiro Valor"))
+             y = parseInt(prompt("Segundo Valor"))
+             divisao = x / y
+             document.write("Resultado da Divisão: "+divisao+"<br>")
+            break;
+    
+         default:
+            alert ("Opção invalidada!!! Pressione 'F5' e tente novamente!!!")
+            break;
+    }
+              document.write("Parabéns, você conseguiu!!!"+"<br>")
+              document.write("Tecle ''F5'' para fazer outro cálculo"+"<br>")
+              document.write("Obrigado pela preferência e volte sempre <3 !!!")
+</script>

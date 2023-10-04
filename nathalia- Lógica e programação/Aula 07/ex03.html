@@ -1,0 +1,41 @@
+<script>
+
+alert(" menu \n "+
+" 1 - teste o numero \n"+
+"2 - testa media ")
+
+let op = parseInt(prompt("Opcao: "))
+switch (op) {
+    case 1:
+
+    let n = parseInt(prompt("numero"))
+        if (n %2 == 0) {
+            document.write(n+" e par!!! "+"<br>")
+        } else {
+            document.write(n+" e impar!!! "+"<br>")
+        }
+
+        break;
+
+    default:
+        break;
+}
+switch (op) {
+    case 2:
+    let md = parseFloat(prompt("Média"))
+        
+if (md >= 7) {
+    document.write (md + "apro")
+} else if (md < 5) {
+    document.write (md + "recuperação")
+} else {
+    document.write (md + "repro")
+}
+        break;
+
+    default:
+    alert("opçao invalida")
+        break;
+}
+
+</script>
